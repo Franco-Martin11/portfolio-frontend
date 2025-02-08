@@ -12,29 +12,30 @@ import {
   PhFigmaLogo,
   PhFilePdf,
 } from "@phosphor-icons/vue";
+import { generateUUID } from "~/utils/generateUUID";
 
 export const LinkRuoteArray: LinkRoute[] = [
   {
     route: "#about",
-    id: 2,
+    id:generateUUID(),
     title: "About",
     ariaLabel: "Link to about page",
   },
   {
     route: "#projects",
-    id: 3,
+    id:generateUUID(),
     title: "Projects",
     ariaLabel: "Link to Projects page",
   },
   {
     route: "#experience",
-    id: 4,
+    id:generateUUID(),
     title: "Experience",
     ariaLabel: "Link to Experience page",
   },
   {
     route: "#contact",
-    id: 5,
+    id:generateUUID(),
     title: "Contact",
     ariaLabel: "Link to Contact page",
   },
@@ -84,21 +85,21 @@ export const ProjectExampleData: ProjectProps[] = [
       {
         icon: PhLinkSimple,
         // route: "https://yomeanimo-chakra.netlify.app/",
-        id: 123436798,
+        id:generateUUID(),
         title: "Deploy",
       },
       {
         icon: PhGithubLogo,
         route: "https://github.com/Franco-Martin11/ReWork-Yomeanimo",
-        id: 2,
+        id:generateUUID(),
         title: "Repository",
       },
     ],
     listTecnologies: [
-      { item: "Chakra UI", id: 1 },
-      { item: "React.js", id: 12 },
-      { item: "React Router Dom", id: 123 },
-      { item: "Emotion", id: 1234 },
+      { item: "Chakra UI", id:generateUUID() },
+      { item: "React.js", id:generateUUID() },
+      { item: "React Router Dom", id:generateUUID() },
+      { item: "Emotion", id:generateUUID() },
     ],
   },
   {
@@ -118,33 +119,33 @@ export const ProjectExampleData: ProjectProps[] = [
       {
         icon: PhLinkSimple,
         // route: "https://dashboard-insightdash.netlify.app/",
-        id: 1236798,
+        id:generateUUID(),
         title: "Deploy",
       },
       {
         icon: PhGithubLogo,
         route: "https://github.com/Franco-Martin11/Dashboard-Vue",
-        id: 21125,
+        id:generateUUID(),
         title: "Repository",
       },
       {
         icon: PhFigmaLogo,
         route:
           "https://www.figma.com/file/M0lpqQYhM92zZ9glTa7Tao/Dashboard-vue?type=design&mode=design&t=OpvwOcXa87vohKWZ-1",
-        id: 211255566,
+        id:generateUUID(),
         title: "Desing",
       },
     ],
     listTecnologies: [
-      { item: "Figma", id: 1212313 },
-      { item: "Vue.js", id: 12123 },
-      { item: "Typescript", id: 12876123 },
-      { item: "Vue Router", id: 132122 },
-      { item: "Tailwind", id: 123213 },
-      { item: "Apextchart", id: 122134 },
-      { item: "Motion", id: 121234 },
-      { item: "Node", id: 2121234 },
-      { item: "Express", id: 3121234 },
+      { item: "Figma", id:generateUUID() },
+      { item: "Vue.js", id:generateUUID() },
+      { item: "Typescript", id:generateUUID() },
+      { item: "Vue Router", id:generateUUID() },
+      { item: "Tailwind", id:generateUUID() },
+      { item: "Apextchart", id:generateUUID() },
+      { item: "Motion", id:generateUUID() },
+      { item: "Node", id:generateUUID()},
+      { item: "Express", id:generateUUID() },
     ],
   },
   {
@@ -155,11 +156,11 @@ export const ProjectExampleData: ProjectProps[] = [
         "an audio e-commerce app built using Chakra UI, Next.js, Redux Toolkit, and Formik. This app combines stunning visual design with robust functionality, offering a seamless shopping experience for audio enthusiasts. With Chakra UI, the app showcases a sleek and intuitive interface. Next.js powers fast and efficient page loading, while Redux Toolkit ensures smooth state management. Formik simplifies form handling, making it easy for users to interact with the app. Explore the endless possibilities of audio shopping with this captivating and feature-rich e-commerce app.",
     },
     listTecnologies: [
-      { item: "Next.js", id: 13112345546432 },
-      { item: "Typescript", id: 112345546432 },
-      { item: "Redux Tollkit", id: 12 },
-      { item: "Chakra UI", id: 123 },
-      { item: "Formik", id: 1234 },
+      { item: "Next.js", id:generateUUID() },
+      { item: "Typescript", id:generateUUID() },
+      { item: "Redux Tollkit", id:generateUUID() },
+      { item: "Chakra UI", id:generateUUID() },
+      { item: "Formik", id:generateUUID() },
     ],
     image: {
       srcUrl: "/XX99-Mark-I-Headphones.webp",
@@ -170,13 +171,13 @@ export const ProjectExampleData: ProjectProps[] = [
       {
         icon: PhLinkSimple,
         route: "https://audiophile-ecommerce-pearl.vercel.app/",
-        id: 4,
+        id:generateUUID(),
         title: "Deploy",
       },
       {
         icon: PhGithubLogo,
         route: "https://github.com/Franco-Martin11/Audiophile-ecommerce",
-        id: 5,
+        id:generateUUID(),
         title: "Repository",
       },
     ],
@@ -189,7 +190,7 @@ export const ProjectExampleData: ProjectProps[] = [
 
             What can you expect from our landing page application? It's more than just a furniture catalog; it's an immersive experience that takes you on a journey through creativity and beauty. Explore our gallery of exclusive designs, where you'll find a wide variety of furniture that caters to different styles and needs.`,
     },
-    listTecnologies: [{ item: "Figma", id: 125581 }],
+    listTecnologies: [{ item: "Figma", id:generateUUID() }],
     image: {
       srcUrl: "/Thumbnail-Preview.webp",
       alt: "Ejemplo de imagen",
@@ -200,7 +201,7 @@ export const ProjectExampleData: ProjectProps[] = [
         icon: PhFigmaLogo,
         route:
           "https://www.figma.com/file/73OcrRcPuE71Gads2CaZbo/Furni.shop---landing-page?type=design&t=OpvwOcXa87vohKWZ-6",
-        id: 4,
+        id:generateUUID(),
         title: "Desing",
       },
     ],
@@ -213,10 +214,10 @@ export const ProjectExampleData: ProjectProps[] = [
         "This application is a landing page that serves to publicize both designs and applications already created for our customers around the world, this business has several franchises throughout the world therefore serves as a platform for redirecting customers depending on the country or region where they are.",
     },
     listTecnologies: [
-      { item: "React.js", id: 1 },
-      { item: "Javascript", id: 13231254 },
-      { item: "Emotion", id: 1232 },
-      { item: "HTML5", id: 12132 },
+      { item: "React.js", id:generateUUID() },
+      { item: "Javascript", id:generateUUID() },
+      { item: "Emotion", id:generateUUID() },
+      { item: "HTML5", id:generateUUID() },
     ],
     image: {
       srcUrl: "/DESIGNO.webp",
@@ -227,13 +228,13 @@ export const ProjectExampleData: ProjectProps[] = [
       {
         icon: PhLinkSimple,
         // route: "https://designo-website.netlify.app/",
-        id: 4,
+        id:generateUUID(),
         title: "Deploy",
       },
       {
         icon: PhGithubLogo,
         route: "https://github.com/Franco-Martin11/DesignoWebSite",
-        id: 5,
+        id:generateUUID(),
         title: "Repository",
       },
     ],
@@ -246,11 +247,11 @@ export const ProjectExampleData: ProjectProps[] = [
         "In this case I took the UI design of a very famous fashion magazine in Europe (Marie Claire) which I adapted using different styles and layouts.",
     },
     listTecnologies: [
-      { item: "Figma", id: 131256 },
-      { item: "React.Js", id: 13132256 },
-      { item: "Typescript", id: 13132251236 },
-      { item: "HTML5", id: 131213256 },
-      { item: "SASS", id: 342 },
+      { item: "Figma", id:generateUUID() },
+      { item: "React.Js", id:generateUUID() },
+      { item: "Typescript", id:generateUUID() },
+      { item: "HTML5", id:generateUUID() },
+      { item: "SASS", id:generateUUID()},
     ],
     image: {
       srcUrl: "/Claire-Magazine.webp",
@@ -261,13 +262,13 @@ export const ProjectExampleData: ProjectProps[] = [
       {
         icon: PhLinkSimple,
         // route: "https://claire-page-demo.netlify.app/",
-        id: 4,
+        id:generateUUID(),
         title: "Deploy",
       },
       {
         icon: PhGithubLogo,
         route: "https://github.com/Franco-Martin11/Claire-page",
-        id: 5,
+        id:generateUUID(),
         title: "Repository",
       },
     ],
@@ -280,11 +281,11 @@ export const ProjectExampleData: ProjectProps[] = [
         "a responsive app crafted with Next.js, SWR, and CSS Modules. Inspired by a design in Figma, this application showcases my expertise in creating seamless user experiences across various devices. Leveraging the power of Next.js, the app delivers fast loading times and server-side rendering. With SWR, data fetching becomes effortless, ensuring real-time updates. CSS Modules enable modular styling, maintaining code readability and scalability. Immerse yourself in the beauty of this responsive app and enjoy a smooth browsing experience..",
     },
     listTecnologies: [
-      { item: "Figma", id: 3121 },
-      { item: "Next.js", id: 1 },
-      { item: "Next API-Routes", id: 1312132 },
-      { item: "SWR", id: 2345 },
-      { item: "CSS Modules", id: 123 },
+      { item: "Figma", id:generateUUID() },
+      { item: "Next.js", id:generateUUID() },
+      { item: "Next API-Routes", id:generateUUID() },
+      { item: "SWR", id:generateUUID() },
+      { item: "CSS Modules", id:generateUUID() },
     ],
     image: {
       srcUrl: "/BeerShop.webp",
@@ -296,13 +297,13 @@ export const ProjectExampleData: ProjectProps[] = [
       {
         icon: PhLinkSimple,
         route: "https://beer-shop-next.vercel.app/",
-        id: 4,
+        id:generateUUID(),
         title: "Deploy",
       },
       {
         icon: PhGithubLogo,
         route: "https://github.com/Franco-Martin11/ChallengeReact",
-        id: 5,
+        id:generateUUID(),
         title: "Repository",
       },
     ],
@@ -315,8 +316,8 @@ export const ProjectExampleData: ProjectProps[] = [
         "A dynamic website crafted using HTML, CSS, and JavaScript. Drawing inspiration from a frontend mentor starter pack, this endeavor showcases my skills in creating interactive and visually appealing user interfaces. From seamless navigation to captivating animations, I've brought the design to life, ensuring a delightful user experience. Explore the harmonious blend of aesthetics and functionality as you interact with this frontend masterpiece.",
     },
     listTecnologies: [
-      { item: "HTML5", id: 1 },
-      { item: "CSS3", id: 12653 },
+      { item: "HTML5", id:generateUUID() },
+      { item: "CSS3", id:generateUUID()},
     ],
     image: {
       srcUrl: "/FiloLanding.webp",
@@ -328,13 +329,13 @@ export const ProjectExampleData: ProjectProps[] = [
       {
         icon: PhLinkSimple,
         route: "",
-        id: 4,
+        id:generateUUID(),
         title: "Deploy",
       },
       {
         icon: PhGithubLogo,
         route: "",
-        id: 5,
+        id:generateUUID(),
         title: "Repository",
       },
     ],
@@ -347,10 +348,10 @@ export const ProjectExampleData: ProjectProps[] = [
         "In this case I took the UI design of a very famous ecommerce in Latin America (MercadoLibre) as a reference and made some changes in the layout and styles.",
     },
     listTecnologies: [
-      { item: "React.Js", id: 1277657 },
-      { item: "Chakra UI", id: 1 },
-      { item: "Emotion", id: 123 },
-      { item: "Wouter", id: 1234 },
+      { item: "React.Js", id:generateUUID() },
+      { item: "Chakra UI", id:generateUUID() },
+      { item: "Emotion", id:generateUUID() },
+      { item: "Wouter", id:generateUUID() },
     ],
     image: {
       srcUrl: "/Mercadolibre-Clone.webp",
@@ -361,13 +362,13 @@ export const ProjectExampleData: ProjectProps[] = [
       {
         icon: PhLinkSimple,
         // route: "https://freemarket-clone.netlify.app/",
-        id: 4,
+        id:generateUUID(),
         title: "Deploy",
       },
       {
         icon: PhGithubLogo,
         route: "https://github.com/Franco-Martin11/MercadoLibreCLONE",
-        id: 5,
+        id:generateUUID(),
         title: "Repository",
       },
     ],
@@ -378,104 +379,104 @@ const listResponsibilities: { xirect: ListItem[]; dupan: ListItem[] } = {
   xirect: [
     {
       item: "User interface development",
-      id: "1312",
+      id:generateUUID(),
     },
     {
       item: "Develop visually appealing and responsive user interfaces using Vue.js and Vuetify.",
-      id: "132",
+      id:generateUUID(),
     },
     {
       item: "Utilize Nuxt.js to build universal web applications with enhanced performance and fast initial load times.",
-      id: "12",
+      id:generateUUID()
     },
     {
       item: "Integrate JWT for secure authentication and authorization to control access to protected resources.",
-      id: "2",
+      id:generateUUID()
     },
     {
       item: "Implement state management using Vuex to ensure efficient data flow and communication between components.",
-      id: "3",
+      id:generateUUID()
     },
     {
       item: "Handle HTTP requests and manage responses using Axios to connect with web services and APIs",
-      id: "3312",
+      id:generateUUID()
     },
     {
       item: "Collaborate with the backend team to integrate the frontend with web services and APIs, ensuring smooth communication and a consistent user experience.",
-      id: "4",
+      id:generateUUID()
     },
     {
       item: "Collaboration with team in desing issues",
-      id: "5",
+      id:generateUUID()
     },
   ],
   dupan: [
     {
       item: "User interface development",
-      id: "1321",
+      id:generateUUID(),
     },
     {
       item: "Performance optimization",
-      id: "2123",
+      id:generateUUID(),
     },
     {
       item: "Leverage Redux Toolkit Query to handle data fetching, caching, and synchronization with the server.",
-      id: "332",
+      id:generateUUID(),
     },
     {
       item: "Utilize React Router DOM for efficient client-side routing, ensuring smooth navigation and a seamless user experience.",
-      id: "31",
+      id:generateUUID(),
     },
     {
       item: "Collaborate closely with backend developers and designers to integrate frontend components with backend APIs and ensure a seamless end-to-end application experience.",
-      id: "3231",
+      id:generateUUID(),
     },
     {
       item: "Utilize RxJS to implement reactive programming.",
-      id: "3",
+      id:generateUUID(),
     },
     {
       item: "Implementation of responsive designs",
-      id: "4",
+      id:generateUUID(),
     },
     {
       item: "Collaboration with the design team",
-      id: "5",
+      id:generateUUID(),
     },
   ],
 };
 
 export const listTecnologies: Record<string, ListItem[]> = {
   xirect: [
-    { item: "Vue", id: 11 },
-    { item: "Vuex", id: 122 },
-    { item: "Nuxt.js", id: 1233 },
-    { item: "Vuetify", id: 12344 },
-    { item: "Axios", id: 123455 },
-    { item: "JWT", id: 1234566 },
-    { item: "Apexcharts", id: 12345668 },
-    { item: "HTML5", id: 12345668312 },
-    { item: "Flex & Grid", id: 123456312 },
-    { item: "Figma", id: 12345667 },
-    { item: "GitLab", id: 12345669 },
-    { item: "Git", id: 12345660 },
-    { item: "React", id: 123456601 },
-    { item: "Ionic", id: 1234566012 },
+    { item: "Vue", id:generateUUID() },
+    { item: "Vuex", id:generateUUID() },
+    { item: "Nuxt.js", id:generateUUID() },
+    { item: "Vuetify", id:generateUUID() },
+    { item: "Axios", id:generateUUID() },
+    { item: "JWT", id:generateUUID() },
+    { item: "Apexcharts", id:generateUUID() },
+    { item: "HTML5", id:generateUUID() },
+    { item: "Flex & Grid", id:generateUUID() },
+    { item: "Figma", id:generateUUID() },
+    { item: "GitLab", id:generateUUID()},
+    { item: "Git", id:generateUUID() },
+    { item: "React", id:generateUUID() },
+    { item: "Ionic", id:generateUUID() },
   ],
   dupan: [
-    { item: "React.js", id: 1 },
-    { item: "Typescript", id: 12345 },
-    { item: "HTML5", id: 123456 },
-    { item: "Flex & Grid", id: 123456312 },
-    { item: "Redux", id: 12132253 },
-    { item: "Redux Toolkit", id: 123132134 },
-    { item: "React Router Dom", id: 1234561322 },
-    { item: "Toolkit Query", id: 12345613234 },
-    { item: "Rx.js", id: 123456132278132 },
-    { item: "Tailwind", id: 1234123 },
-    { item: "Figma", id: 1234561323 },
-    { item: "GitLab", id: 1234561324 },
-    { item: "Git", id: 123456213231 },
+    { item: "React.js", id:generateUUID() },
+    { item: "Typescript", id:generateUUID() },
+    { item: "HTML5", id:generateUUID() },
+    { item: "Flex & Grid", id:generateUUID() },
+    { item: "Redux", id:generateUUID() },
+    { item: "Redux Toolkit", id:generateUUID() },
+    { item: "React Router Dom", id:generateUUID() },
+    { item: "Toolkit Query", id:generateUUID() },
+    { item: "Rx.js", id:generateUUID() },
+    { item: "Tailwind", id:generateUUID() },
+    { item: "Figma", id:generateUUID() },
+    { item: "GitLab", id:generateUUID()},
+    { item: "Git", id:generateUUID() },
   ],
 };
 
@@ -493,7 +494,7 @@ export const companiesExperience: ExperienceCard[] = [
     
     Ionic and React.js application development, successfully ensuring the maintenance of a cross-platform solution tailored for agile incident management within the dynamic landscape of machine operations.`,
     listTecnologies: listTecnologies.xirect,
-    id: 11321123,
+    id:generateUUID()
   },
   {
     companies: "Dupan.io",
@@ -503,6 +504,6 @@ export const companiesExperience: ExperienceCard[] = [
 
     Throughout the project, I collaborated closely with a talented team of developers, utilizing my skills in frontend development to create an immersive and visually appealing e-commerce experience. The result was a dynamic and intuitive platform that provided seamless navigation and an enhanced user interface.`,
     listTecnologies: listTecnologies.dupan,
-    id: 12,
+    id:generateUUID()
   },
 ];

@@ -1,4 +1,4 @@
-export type ProjectRoutes = { url: string; title: string; id: number };
+export type ProjectRoutes = { url: string; title: string; id: string };
 
 import type { Component } from "vue";
 
@@ -13,7 +13,7 @@ export type Project = {
 
 export type LinkRoute = {
   route: string;
-  id: number;
+  id: string;
   title: string;
   ariaLabel: string;
 };
@@ -21,7 +21,7 @@ export type LinkRoute = {
 export type MediaLink = {
   route: string;
   ariaLabel: string;
-  id?: number;
+  id?: string;
   label: string;
   icon: IconType;
 };
@@ -35,7 +35,7 @@ export type ImageProps = {
 export type HyperLinkItem = {
   icon: IconType;
   route?: string;
-  id: number;
+  id: string;
   title: string;
 };
 
@@ -53,18 +53,18 @@ export type ProjectProps = {
   listTecnologies: ListItem[];
 };
 
-export type ListItem = { item: string; id: number | string };
+export type ListItem = { item: string; id: string };
 export interface ExperienceCard {
   companies: string;
   date: string;
   desciption: string;
   listResponsibilities: ListItem[];
   listTecnologies: ListItem[];
-  id?: number;
+  id?: string;
 }
 
 export type StackItem = {
   src: IconType;
   alt: string;
-  id?: number;
+  id?: string;
 };
